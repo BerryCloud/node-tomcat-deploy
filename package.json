@@ -1,8 +1,9 @@
 {
   "name": "tomcat-deploy",
-  "version": "0.1.0",
-  "description": "Deploy your warfile to Tomcat server",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Deploy your warfiles to Tomcat server. Useful for deploying from build agents.",
+  "keywords": ["tomcat", "deploy", "warfile", "build"],
+  "main": "dist/index.js",
   "dependencies": {
     "extend": "^3.0.0"
   },
@@ -35,6 +36,13 @@
     "test:mocha": "mocha --compilers js:babel-register --recursive",
     "test:watch": "npm run test:mocha -- --watch"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "Pavel Žák <pavel@berrycloud.cz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berrycloud/node-tomcat-deploy.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/owner/project/issues"
+  }
 }
