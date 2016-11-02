@@ -46,14 +46,14 @@ const validateArgs = (command, warfile, args) => {
 
 const args = useArgs(
   {
-    deployPath: process.env.DEPLOY_PATH,
+    deployPath: process.env.TOMCAT_DEPLOY_PATH,
     hostname: process.env.TOMCAT_HOSTNAME,
-    listPath: process.env.DEPLOY_PATH,
+    listPath: process.env.TOMCAT_LIST_PATH,
     login: process.env.TOMCAT_LOGIN,
     password: process.env.TOMCAT_PASSWORD,
     port: process.env.TOMCAT_PORT,
     path: process.env.TOMCAT_PATH,
-    undeployPath: process.env.DEPLOY_PATH,
+    undeployPath: process.env.TOMCAT_UNDEPLOY_PATH,
   },
   minimist(process.argv.slice(2))
 );
