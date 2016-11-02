@@ -1,6 +1,6 @@
 {
   "name": "tomcat-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy your warfiles to Tomcat server. Useful for deploying from build agents.",
   "keywords": ["tomcat", "deploy", "warfile", "build"],
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "scripts": {
     "build:library": "webpack -p --config webpack/library.js",
     "build": "npm run build:library",
-    "postinstall": "npm run build",
+    "prepublish": "npm run test && npm run build",
     "pretest": "npm run test:lint",
     "test": "npm run test:mocha",
     "test:lint": "eslint src/ test/",
