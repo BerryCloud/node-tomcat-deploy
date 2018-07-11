@@ -10,7 +10,8 @@
   ],
   "main": "dist/index.js",
   "dependencies": {
-    "extend": "^3.0.0"
+    "extend": "^3.0.0",
+    "minimist": "^1.2.0"
   },
   "bin": {
     "tomcat-deploy": "./bin/tomcat-deploy.js"
