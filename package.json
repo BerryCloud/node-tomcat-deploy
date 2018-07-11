@@ -1,6 +1,6 @@
 {
   "name": "tomcat-deploy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Deploy your warfiles to Tomcat server. Useful for deploying from build agents.",
   "keywords": [
     "tomcat",
