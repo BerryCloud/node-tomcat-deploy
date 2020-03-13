@@ -11,7 +11,7 @@
   "main": "dist/index.js",
   "dependencies": {
     "extend": "^3.0.2",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.2"
   },
   "bin": {
     "tomcat-deploy": "./bin/tomcat-deploy.js"
